@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Lanjutan</title>
+    </head>
+    <body>
+        <header>
+            <h1>Membuat Form</h1>
+        </header>
+    </body>
+</html>
+
+<form action="proses.php" method="post">
+    <fieldset>
+        <legend>Data Pelanggan</legend>
+        <p>
+            <label for="nama">Nama</label>
+             <input type="text" id="nama" name="nama">
+             </p>
+             <p>
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
+            </p>
+            <p>
+                <label>Jenis Kelamin</label>
+                <input id="jk_l" type="radio" name="kelamin" value="L" /><label
+for="jk_l">Laki-laki</label>
+ <input id="jk_p" type="radio" name="kelamin" value="P" /><label
+
+for="jk_p">Perempuan</label>
+        </p>
+        <p><input type="submit" value="Login"></p>
+    </fieldset>
+</form>
+
+<style>
+    form p > label {
+        display: inline-block;
+        width: 100px;
+    }
+    form input[type="text"], form textarea {
+        border: 1px solid #197a43;
+    }
+    form input[type="submit"] {
+        border: 1px solid #197a43;
+        background-color: #197a43;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 5px 15px;
+    }
+</style>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form dengan Dropdown dan Listbox</title>
+</head>
+<body>
+  <h1>Form dengan Dropdown dan Listbox</h1>
+  
+  <form>
+    <label for="dropdown">Pilih opsi dari dropdown:</label>
+    <select id="dropdown" name="dropdown">
+      <option value="option1">Opsi 1</option>
+      <option value="option2">Opsi 2</option>
+      <option value="option3">Opsi 3</option>
+      <option value="option4">Opsi 4</option>
+    </select>
+    
+    <br><br>
+    
+    <label for="listbox">Pilih opsi dari listbox (tekan Ctrl/Cmd untuk multi-select):</label>
+    <select id="listbox" name="listbox" multiple>
+      <option value="item1">Item 1</option>
+      <option value="item2">Item 2</option>
+      <option value="item3">Item 3</option>
+      <option value="item4">Item 4</option>
+    </select>
+    
+    <br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
